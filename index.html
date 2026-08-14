@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flappy Bird</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- Tela inicial -->
+        <section id="start-screen" class="screen">
+
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+
+            <div class="title-container">
+
+                <h1>FLAPPY</h1>
+                <h2>BIRD</h2>
+
+                <div class="bird-logo">
+                    🐤
+                </div>
+
+                <button id="start-button">
+                    JOGAR
+                </button>
+
+                <button id="instructions-button" class="secondary-button">
+                    COMO JOGAR
+                </button>
+
+            </div>
+
+            <p class="copyright">
+                Projeto escolar • HTML • CSS • JavaScript
+            </p>
+
+        </section>
+
+
+        <!-- Tela de instruções -->
+        <section id="instructions-screen" class="screen hidden">
+
+            <div class="instructions-box">
+
+                <h2>COMO JOGAR</h2>
+
+                <p>
+                    🐤 Ajude o passarinho a voar entre os canos!
+                </p>
+
+                <p>
+                    🖱️ Clique na tela ou pressione
+                    <strong>ESPAÇO</strong> para voar.
+                </p>
+
+                <p>
+                    🚧 Não encoste nos canos!
+                </p>
+
+                <p>
+                    🏆 Passe pelos canos para ganhar pontos.
+                </p>
+
+                <button id="back-button">
+                    VOLTAR
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Área do jogo -->
+        <section id="game-screen" class="hidden">
+
+            <canvas id="gameCanvas"></canvas>
+
+            <div id="score">
+                0
+            </div>
+
+        </section>
+
+
+        <!-- Tela de Game Over -->
+        <section id="game-over-screen" class="screen hidden">
+
+            <div class="game-over-box">
+
+                <h2>GAME OVER</h2>
+
+                <p>
+                    Pontuação:
+                    <strong id="final-score">0</strong>
+                </p>
+
+                <p>
+                    Recorde:
+                    <strong id="best-score">0</strong>
+                </p>
+
+                <button id="restart-button">
+                    JOGAR NOVAMENTE
+                </button>
+
+                <button id="menu-button" class="secondary-button">
+                    MENU PRINCIPAL
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
